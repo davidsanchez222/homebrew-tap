@@ -5,21 +5,21 @@
 class Niimtui < Formula
   desc "Terminal-first label design and printing for Niimbot printers"
   homepage "https://github.com/davidsanchez222/niimtui"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/davidsanchez222/niimtui/releases/download/v0.1.0/niimtui_0.1.0_darwin_amd64.tar.gz"
-    sha256 "c07c516469286c8f3f28085a47d74378d5d2d308866dc811c29a9e03a526575c"
+    url "https://github.com/davidsanchez222/niimtui/releases/download/v0.1.1/niimtui_0.1.1_darwin_amd64.tar.gz"
+    sha256 "b1f472aac853e569c8df4d7fb01a8139269f2af5e0afc0c602df50c787b94483"
 
     define_method(:install) do
       bin.install "niimtui"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/davidsanchez222/niimtui/releases/download/v0.1.0/niimtui_0.1.0_darwin_arm64.tar.gz"
-    sha256 "e57a83b0862c74c584ffe1286e5fd821f31568572f65dd97804e580394717998"
+    url "https://github.com/davidsanchez222/niimtui/releases/download/v0.1.1/niimtui_0.1.1_darwin_arm64.tar.gz"
+    sha256 "1254233df39c13de10016d5d0866422e0fca0ba02d06172805b843d639c2b654"
 
     define_method(:install) do
       bin.install "niimtui"
